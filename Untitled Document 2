@@ -1,0 +1,16 @@
+<html>
+<head>
+<title> Table Rowspan/Colspan</title>
+</head>
+
+<body>
+<table>
+<tr>
+<td>row 2 cell 2</td>
+<td>row 2 cell 3</td>
+</tr>
+<tr>
+<td colspan ="3">Row 3 cell 1</td>
+</tr>
+</table>
+</body>

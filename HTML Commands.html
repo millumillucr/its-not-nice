@@ -1,0 +1,539 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+
+<title>HTML Commands</title>
+<meta http-equiv="Version" name="version" content="080596">
+
+<link rel="preload" href="HTML%20Commands_files/integrator_002.js" as="script"><script src="HTML%20Commands_files/osd.js"></script><script src="HTML%20Commands_files/show_ads_impl.js" id="google_shimpl"></script><script src="HTML%20Commands_files/ca-pub-2138107218576657.js"></script><script type="text/javascript" src="HTML%20Commands_files/integrator_002.js"></script><link rel="preload" href="HTML%20Commands_files/integrator.js" as="script"><script type="text/javascript" src="HTML%20Commands_files/integrator.js"></script><link rel="preload" href="HTML%20Commands_files/show_ads_impl.js" as="script"></head>
+<body vlink="#990854" text="#000000" link="#9900cc" bgcolor="#eee8ea" alink="#FF0066">
+<a name="cmdtable"></a><p><basefont size="4">
+
+</p><center>
+<table cellpadding="5" border="3">
+<tbody><tr><td align="center">Index of<br> <a href="http://www.transaction.net/web/tutor/appendix.html">Terms and Resources</a></td>
+<td align="center"><a href="http://www.transaction.net/web/tutor/tutor3.html">Shaping the Pieces</a></td><td align="center">Spin Doctor's <br><a href="http://www.transaction.net/web/tutor/index.html">Web Design 101</a></td><td align="center"><a href="http://www.transaction.net/web/tutor/text/index.html">Maximizing Meaning</a><br>in Your Text</td><td align="center"><a href="http://www.transaction.net/index.html">TRANSACTION.NET</a><br> home page</td></tr></tbody></table></center>
+<p></p><p></p><hr width="50%"><p>
+
+
+
+<!--Start Google Adsense Code-->
+
+</p><center>
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-2138107218576657";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "F9DFF9";
+google_color_bg = "F9DFF9";
+google_color_link = "0000CC";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript" src="HTML%20Commands_files/show_ads.js">
+</script><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:728px;height:90px;" width="728" height="90" frameborder="0"></iframe></ins></ins>
+
+
+<center>
+
+<!--Stop Google Adsense Code-->
+
+
+<hr width="50%">
+<p>
+</p><center><h1>Purpose and Placement of<br> HTML Commands</h1></center><p>
+
+<b>We offer this table as a quick reference to supplement the <a href="http://www.transaction.net/web/tutor/index.html">HTML tutorial</a>.
+  It shows the commands, a brief statement of their use, which 
+attributes can modify them, and which commands they can inhabit or 
+include, but it doesn't go over the basics of HTML syntax.  If you're 
+new to HTML, visit <a href="http://www.transaction.net/web/tutor/index.html">Spin Doctor's Web Design 101</a> first. </b></p><p>
+</p><center>
+<table cellspacing="2" cellpadding="5" border="">
+<tbody><tr><td align="center"><font size="+1"><a href="#global">Global</a></font></td><td align="center"><font size="+1"><a href="#head">Head</a></font></td><td align="center"><font size="+1"><a href="#body">Body</a>:</font><br><hr>
+<a href="#format">Character Formatting</a><br><a href="#break">Breaks, Headings, and Titles</a><br><a href="#image">Images</a> and <a href="#form">Forms</a><br> 
+<a href="#list">Lists</a> and <a href="#table">Tables</a><br>
+Hypertext <a href="#hyper">Anchors</a><br></td></tr>
+<tr></tr>
+ </tbody></table>
+</center>
+<p>
+
+
+</p><hr width="50%">
+
+<table width="98%" cellspacing="1" cellpadding="3" border="1">
+
+<tbody><tr>
+<th align="center">Commands</th>
+<th align="center">Purpose</th>
+<th align="center">Attributes and<br>Extensions</th>
+<th align="center">Can<br>Subsume:</th>
+<th align="center">Can be<br> Nested inside:</th></tr>
+
+
+<tr><td colspan="5"><a name="global"></a><b>Global</b><center><table border=""><tbody><tr><td><a href="#cmdtable">&lt;&lt;&lt;Top</a></td><td><a href="#head">Next&gt;&gt;</a></td></tr></tbody></table></center></td></tr>
+
+
+<tr><td align="center"><font size="+1">&lt;!--...--&gt;</font></td>
+<td colspan="2">allows you to insert a line of browser-invisible comments in your document</td>
+<td colspan="2"> some browsers may execute the tags inside comment lines, so it's best to avoid nesting commands within comments</td>
+</tr>
+
+<tr>
+<td align="center"><font size="+1">&lt;html&gt;...&lt;/html&gt;</font></td>
+<td colspan="2">marks the opening and closing of an HTML document</td>
+
+<td align="center"> &lt;head&gt;...&lt;/head&gt;<br>&lt;body&gt;...&lt;/body&gt;</td>
+<td>surrounds all other HTML commands</td></tr>
+
+<tr>
+<td align="center"><font size="+1">&lt;head&gt;...&lt;/head&gt;</font></td>
+<td colspan="2">creates the <a href="http://www.transaction.net/web/tutor/tutor3.html#head">head</a> of an HTML document</td>
+
+<td align="center">&lt;title&gt;...&lt;/title&gt;<br>&lt;meta&gt;<br> &lt;isindex&gt;<br> &lt;base&gt;<br> &lt;nextid&gt;<br> &lt;link&gt;</td>
+<td>immediately after &lt;HTML&gt; and before &lt;BODY&gt;...&lt;/BODY&gt;</td></tr>
+
+<tr>
+<td align="center"><font size="+1">&lt;body&gt;...&lt;/body&gt;</font></td>
+<td>creates the <a href="http://www.transaction.net/web/tutor/tutor3.html#body">body</a> of an HTML document</td>
+<td><b>background</b>= designates a file to be displayed as background<br> <b>bgcolor</b>="#(hexadecimal color code)" sets the background color<br><b>text</b>="#(hexadecimal color code)" sets the color of plain text<br><b>link</b>="#(hexadecimal color code)" sets the color of unfollowed text links<br><b>alink</b>="#(hexadecimal color code)" sets the color of active text links<br><b>vlink</b>="#(hexadecimal color code)" sets the color of visited text links</td>
+<td>all lists,<br> anchors, tables,<br> forms, images, <br>text, breaks, characters,<br> and headings </td>
+<td>inside<br> &lt;html&gt;...&lt;/html&gt;<br> and after &lt;head&gt;...&lt;/head&gt;</td></tr>
+
+<tr>
+<td align="center"><font size="+1">&lt;isindex&gt;</font></td>
+<td>activates the browser's searching function</td>
+<td colspan="2" keywords.="">HTML 3.0:<br>
+<b>prompt</b>="..." allows you to specify the search prompt.<br>(default prompt is "This is a searchable index.  Enter search keywords:")</td>
+<td align="center">&lt;blockquote&gt;<br>...&lt;/blockquote&gt;<br>
+&lt;body&gt;...&lt;/body&gt;<br> &lt;dd&gt; or &lt;li&gt;<br>&lt;form&gt;...&lt;/form&gt;<br> &lt;head&gt;...&lt;/head&gt; </td>
+</tr>
+
+
+
+
+
+
+
+<tr><td colspan="5"><a name="head"></a>
+
+
+<font size="+1"><b>Head</b></font><center><table border=""><tbody><tr><td><a href="#global">&lt;&lt;Previous</a></td><td><a href="#cmdtable">Top</a></td><td><a href="#body">Next&gt;&gt;</a></td></tr></tbody></table></center></td></tr>
+
+
+<tr>
+<td align="center"><font size="+1">&lt;link&gt;</font></td>
+<td>this command, primarily used by HTML-generating tools, indicates a 
+relationship to other documents (and unlike anchors, cannot indicate 
+relationships to parts of documents)</td>
+<td colspan="2"><b>href</b>="url" of document linked to this one<br> <b>name</b>=anchor (if the link is an anchor)<br><b>rel</b>="(linked to document in relation to this document)"<br><b>rev</b>="(reverse rel b/w this doc and other doc)" <br><b>urn</b>=<b>u</b>niform <b>r</b>esource <b>n</b>umber<br> <b>title</b>="title of linked-to doc"<br> <b>methods</b>="ftp, gopher, etc." (method of retrieving other document)</td><td rowspan="4">inside<p> &lt;HEAD&gt;<br>...&lt;/HEAD&gt;</p></td></tr>
+
+<tr><td align="center"><font size="+1">&lt;meta&gt;</font></td>
+<td>allows you to specify metacontent (self- referential content, or 
+information about the document itself--meant to be read by machines)</td>
+<td colspan="2">http-equiv="name" content="value" names a new HTTP header field whose data will be specified as CONTENT<br> HTTP-Equiv="Expires content="never"<p>name="key" of key/value pair.<br> content="value" of key/value pair.</p></td>
+
+
+</tr><tr>
+<td align="center"><font size="+1">&lt;base&gt;</font></td>
+<td>indicates the full URL of the current document</td>
+<td colspan="2"><b>href</b>="URL"</td>
+
+</tr>
+
+<tr>
+<td align="center"><font size="+1">&lt;title&gt;...&lt;/title&gt;</font></td>
+<td colspan="3">allows you to select a title that will appear in the 
+title bars of browser windows and in bookmarks (default is the actual 
+filename of your document)</td>
+</tr>
+
+
+
+<tr><td colspan="5"><a name="body"></a><font size="+1"><b>Body</b></font><center><table border=""><tbody><tr><td><a href="#head">&lt;&lt;Previous</a></td><td><a href="#cmdtable">Top</a></td><td><a href="#format">Next&gt;&gt;</a></td></tr></tbody></table></center></td></tr>
+
+
+
+
+<tr><td colspan="5"><a name="format"></a><b>Formatting</b><center><table border=""><tbody><tr><td><a href="#body">&lt;&lt;Previous</a></td><td><a href="#cmdtable">Top</a></td><td><a href="#list">Next&gt;&gt;</a></td></tr></tbody></table></center></td></tr>
+
+<tr><td align="center"><font size="+1">&lt;center&gt;...&lt;/center&gt;</font></td>
+<td colspan="2"><center>centers<br>enclosed<br>text</center> </td>
+
+<td valign="middle" align="center">&lt;br&gt; <br>&lt;a&gt;...&lt;/a&gt; or &lt;img&gt;<br>&lt;address&gt;...&lt;/address&gt;<br>&lt;em&gt;...&lt;/em&gt;<br>  &lt;strong&gt;...&lt;/strong&gt;<br> &lt;code&gt;...&lt;/code&gt;<br> &lt;samp&gt;...&lt;/samp&gt;<br> &lt;kbd&gt;...&lt;/kbd&gt;<br> &lt;var&gt;...&lt;/var&gt;<br> &lt;cite&gt;...&lt;/cite&gt;<br> &lt;tt&gt;...&lt;/tt&gt;<br>  &lt;b&gt;...&lt;/b&gt;<br> &lt;i&gt;...&lt;/i&gt;</td>
+<td align="center">&lt;blockquote&gt;<br>...&lt;/blockquote&gt;<p> &lt;body&gt;...&lt;/body&gt;</p><p> &lt;form&gt;...&lt;/form&gt;</p><p> &lt;dd&gt; or &lt;li&gt; </p><p>&lt;th&gt;...&lt;/th&gt; or &lt;td&gt;...&lt;/td&gt;</p></td>
+</tr>
+
+<tr>
+<td colspan="3"><font size="+1">&lt;font size=# &gt;...&lt;/font&gt;</font><p><font size="+1"><a href="http://home.netscape.com/assist/net_sites/html_extensions.html">Netscape extension</a></font></p><p>
+the value for the <code>size</code> attribute can be a number from 1 to 7 (default is 3), or (in quotation marks) a number relative to the current size, e.g. "+2".</p></td>
+
+<td valign="middle" align="center">&lt;br&gt; <br>&lt;img&gt;<br>&lt;a&gt;...&lt;/a&gt;  <br> &lt;em&gt;...&lt;/em&gt;<br> &lt;strong&gt;...&lt;/strong&gt; <br>&lt;code&gt;...&lt;/code&gt;<br> &lt;samp&gt;...&lt;/samp&gt; &lt;kbd&gt;...&lt;/kbd&gt;<br> &lt;var&gt;...&lt;/var&gt; <br>&lt;cite&gt;...&lt;/cite&gt; <br>&lt;tt&gt;...&lt;/tt&gt; <br>&lt;b&gt;...&lt;/b&gt;<br> &lt;i&gt;...&lt;/i&gt;</td>
+
+<td valign="middle" align="center">&lt;p&gt;<br> &lt;a&gt;...&lt;/a&gt;<br> &lt;address&gt;...&lt;/address&gt;<br> &lt;b&gt;...&lt;/b&gt; <br>&lt;cite&gt;...&lt;/cite&gt;<br> &lt;code&gt;...&lt;/code&gt;<br> &lt;dd&gt;, &lt;dt&gt;, or &lt;li&gt; <br>&lt;h#&gt;...&lt;/h#&gt; <br> &lt;em&gt;...&lt;/em&gt;  <br>&lt;i&gt;...&lt;/i&gt; <br>&lt;kbd&gt;...&lt;/kbd&gt;<br>  &lt;pre&gt;...&lt;/pre&gt; <br>&lt;samp&gt;...&lt;/samp&gt; <br>  &lt;td&gt;...&lt;/td&gt; <br>&lt;strong&gt;...&lt;/strong&gt;<br> &lt;tt&gt;...&lt;/tt&gt; <br>&lt;var&gt;...&lt;/var&gt; </td>
+</tr>
+
+<tr>
+<td colspan="3"><font size="+1">&lt;basefont size=#&gt;</font><p><a href="http://home.netscape.com/assist/net_sites/html_extensions.html">Netscape extension</a></p><p>
+the value for the <code>size</code> attribute can be a number from 1 to 7.  the default is 3.</p></td>
+
+<td valign="middle" align="center">&lt;p&gt;<br>&lt;a&gt;...&lt;/a&gt;<br> &lt;address&gt;...&lt;/address&gt; <br>&lt;b&gt;...&lt;/b&gt;<br> &lt;cite&gt;...&lt;/cite&gt;<br>  &lt;code&gt;...&lt;/code&gt;<br>&lt;dd&gt; or &lt;li&gt; &lt;em&gt;...&lt;/em&gt;<br> &lt;h#&gt;...&lt;/h#&gt;<br>&lt;i&gt;...&lt;/i&gt; <br>&lt;kbd&gt;...&lt;/kbd&gt;<br>  &lt;pre&gt;...&lt;/pre&gt; <br>&lt;samp&gt;...&lt;/samp&gt; <br>&lt;strong&gt;...&lt;/strong&gt;<br> &lt;tt&gt;...&lt;/tt&gt; <br>&lt;var&gt;...&lt;/var&gt;</td><td>can be used only once inside<br>
+&lt;body&gt;...&lt;/body&gt;</td>
+</tr>
+
+<tr>
+<td align="center"><font size="+1">&lt;b&gt;...&lt;/b&gt; </font></td>
+<td colspan="2">em<b>bold</b>ens enclosed text</td>
+<td rowspan="14" valign="middle" align="center">&lt;br&gt;<p><br> &lt;img&gt; </p><p><br>&lt;a&gt;...&lt;/a&gt; </p><p><br>&lt;em&gt;...&lt;/em&gt;</p><p> <br>&lt;strong&gt;...&lt;/strong&gt; </p><p><br>&lt;code&gt;...&lt;/code&gt;</p><p><br> &lt;samp&gt;...&lt;/samp&gt;</p><p><br> &lt;kbd&gt;...&lt;/kbd&gt;</p><p><br> &lt;var&gt;...&lt;/var&gt; </p><p><br>&lt;cite&gt;...&lt;/cite&gt; </p><p><br>&lt;tt&gt;...&lt;/tt&gt; </p><p><br>&lt;b&gt;...&lt;/b&gt;</p><p><br>&lt;i&gt;...&lt;/i&gt; </p><p><br></p></td>
+<td rowspan="13" align="center">&lt;p&gt;<p>&lt;a&gt;...&lt;/a&gt;</p><p> &lt;address&gt;...&lt;/address&gt;</p><p>
+ &lt;b&gt;...&lt;/b&gt; </p><p>
+ &lt;cite&gt;...&lt;/cite&gt;</p><p>
+ &lt;code&gt;...&lt;/code&gt; </p><p>
+ &lt;dd&gt;, &lt;dt&gt;,  &lt;li&gt;</p><p>
+   &lt;h#&gt;...&lt;/h#&gt;</p><p>
+    &lt;kbd&gt;...&lt;/kbd&gt; </p><p>
+    &lt;em&gt;...&lt;/em&gt; </p><p>
+    
+     &lt;pre&gt;...&lt;/pre&gt; </p><p>
+      &lt;samp&gt;...&lt;/samp&gt;</p><p>
+      &lt;strong&gt;...&lt;/strong&gt;</p><p>
+       &lt;tt&gt;...&lt;/tt&gt; </p><p>
+       &lt;var&gt;...&lt;/var&gt; </p><p>
+       &lt;th&gt;...&lt;/th&gt; or &lt;td&gt;...&lt;/td&gt;</p></td>
+</tr>
+
+<tr>
+<td align="center"><font size="+1">&lt;em&gt;...&lt;/em&gt;</font> </td>
+<td colspan="2">tells browser to <em>emphasize</em><br> enclosed text</td>
+
+</tr><tr>
+<td align="center"><font size="+1">&lt;strong&gt;<br>...&lt;/strong&gt; </font></td>
+<td colspan="2">tells browser to place <strong>stronger</strong> emphasis on enclosed text</td>
+
+</tr><tr>
+<td align="center"><font size="+1">&lt;cite&gt;<br>...&lt;/cite&gt; </font> </td>
+<td colspan="2"><cite>a citation</cite></td>
+</tr>
+
+<tr>
+<td align="center"><font size="+1">&lt;kbd&gt;...&lt;/kbd&gt; </font> </td>
+<td colspan="2">distinguishes <kbd>text</kbd> to be typed  </td>
+</tr>
+
+
+<tr>
+<td align="center"><font size="+1">&lt;samp&gt;<br>...&lt;/samp&gt; </font> </td>
+<td colspan="2"><samp>sample text</samp></td>
+
+</tr><tr>
+<td align="center"><font size="+1"> &lt;tt&gt;...&lt;/tt&gt;</font></td>
+<td colspan="2">renders text in <tt>monospaced typewriter font</tt></td>
+
+</tr><tr>
+<td align="center"><font size="+1"> &lt;i&gt;...&lt;/i&gt;</font></td>
+<td colspan="2">puts the text in <i>italics</i></td>
+
+</tr>
+
+
+<tr>
+<td align="center"><font size="+1"> &lt;pre&gt;...&lt;/pre&gt;</font></td>
+<td colspan="2">preformatted<br> <pre>  t e x t</pre> to be displayed with spacing intact</td>
+</tr>
+
+<tr>
+<td align="center"><font size="+1"> &lt;address&gt;<br>...&lt;/address&gt;</font></td>
+<td colspan="2">used to format, for example,<br><center><address>signature files<br> and/or copyright information</address></center><br> at the end of a document</td>
+</tr>
+<tr>
+<td align="center"><font size="+1"> &lt;code&gt;...&lt;/code&gt;</font></td>
+<td colspan="2"><code>code sample</code></td>
+</tr>
+
+<tr>
+<td align="center"><font size="+1"> &lt;var&gt;...&lt;/var&gt;</font></td>
+<td colspan="2">placeholder or <var>variable</var> for some other value</td>
+
+</tr>
+
+<tr>
+<td align="center"><font size="+1"> &lt;blink&gt;...&lt;/blink&gt; </font></td>
+<td colspan="2"> makes the text blink.  use at your own <a href="http://www.transaction.net/web/tutor/tutor2b.html#style">risk</a>.</td>
+
+</tr><tr>
+<td align="center"><font size="+2"><b>&lt;h1&gt;...&lt;/h1&gt;</b></font><br><font size="+2">&lt;h2&gt;...&lt;/h2&gt;</font><br><font size="+1"><b>&lt;h3&gt;...&lt;/h3&gt;</b></font><br><font size="+1">&lt;h4&gt;...&lt;/h4&gt;</font><br>&lt;h5&gt;...&lt;/h5&gt;<br><font size="-1">&lt;h6&gt;...&lt;/h6&gt; </font></td>
+<td>marks six levels of headings<br> (1 is largest;<br> 6 smallest)</td>
+<td>align=center (3.0)</td>
+
+<td align="center">&lt;blockquote&gt;<br>...&lt;/blockquote&gt;<br> &lt;body&gt;...&lt;/body&gt;<br> &lt;pre&gt;...&lt;/pre&gt;<br> &lt;address&gt;...&lt;/address&gt;<br> &lt;form&gt;...&lt;/form&gt;<br> &lt;th&gt;...&lt;/th&gt; or &lt;td&gt;...&lt;/td&gt;</td>
+</tr>
+<tr>
+<td colspan="5" align="center"><font size="+1">Refer to this <a href="http://www.georgetown.edu/labyrinth/general/entities.html">chart</a> if you plan to use <a href="http://d1.ph.gla.ac.uk/htmldocs/entities.html">special
+ characters</a>--machine-readable <a href="http://www.uni-passau.de/~ramsch/iso8859-1.html">characters</a> like &lt;brackets&gt;, "quotation marks", &amp; ampersands--in your text.</font>
+ </td>
+
+</tr>
+
+
+<tr><td colspan="5"><a name="list"></a><b>Lists</b><center><table border=""><tbody><tr><td><a href="#format">&lt;&lt;Previous</a></td><td><a href="#cmdtable">Top</a></td><td><a href="#table">Next&gt;&gt;</a></td></tr></tbody></table></center></td></tr>
+<tr>
+<td align="center"><font size="+1">&lt;ul&gt;...&lt;/ul&gt;<br>
+&lt;ol&gt;...&lt;/ol&gt;<br>
+&lt;dl&gt;...&lt;/dl&gt;</font></td>
+<td>allow you to create lists:<br>
+1. ordered,
+<li>unordered, or<br>
+plain</li></td>
+<td><a href="http://home.netscape.com/assist/net_sites/html_extensions.html">Netscape</a><p> <code>type=</code> sets the type of
+            marker (1, A, a, i, disc, circle, square)
+            introducing each list item <br><code>start=</code> overrides usual alphabetical/numerical sequence of ordered lists </p></td>
+<td align="center">&lt;li&gt;, for ordered and unordered lists;<p>
+&lt;dt&gt; and &lt;dd&gt; for definition lists</p></td>
+<td align="center">&lt;blockquote&gt;<br>...&lt;/blockquote&gt; 
+&lt;body&gt;...&lt;/body&gt; &lt;dd&gt; or &lt;li&gt; 
+&lt;form&gt;...&lt;/form&gt;  &lt;th&gt;...&lt;/th&gt; or 
+&lt;td&gt;...&lt;/td&gt;</td>
+</tr>
+
+<tr>
+<td align="center"><font size="+1">&lt;li&gt;
+[...&lt;/li&gt;]</font><p><font size="+1"></font></p></td>
+<td>opens an indented list item (with a number, in an ordered list,<br> or a <li>bullet, in an unordered list)</li></td>
+<td><code>type=</code> sets the type of
+            marker (1, A, a, i, disc, circle, square)
+            introducing each list item <br>
+            <code>value=</code> allows you to set the number or letter of an ordered list item   </td>
+<td rowspan="2" align="center">&lt;a&gt;...&lt;/a&gt; &lt;img&gt; 
+&lt;br&gt; em strong code samp kbd var cite tt &lt;b&gt;...&lt;/b&gt; i 
+&lt;p&gt; ol ul dir menu dl &lt;pre&gt;...&lt;/pre&gt; 
+&lt;blockquote&gt;<br>...&lt;/blockquote&gt;</td>
+<td align="center">dir menu ol ul</td>
+</tr>
+
+<tr><td align="center"><font size="+1">&lt;dt&gt;<br>&lt;dd&gt;</font></td>
+<td colspan="2">these tags mark the terms and definitions (respectively) in a definition list</td>
+<td align="center">&lt;dl&gt;...&lt;/dl&gt;</td>
+</tr>
+
+
+<tr><td colspan="5"><a name="table"></a><b>Tables</b><center><table border=""><tbody><tr><td><a href="#list">&lt;&lt;Previous</a></td><td><a href="#cmdtable">Top</a></td><td><a href="#hyper">Next&gt;&gt;</a></td></tr></tbody></table></center></td></tr>
+
+<tr><td align="center"><font size="+1">&lt;table&gt;...&lt;/table&gt;</font></td>
+<td>creates a table</td>
+<td><a href="http://home.netscape.com/assist/net_sites/tables.html">Netscape extensions</a>:<br>border=<br>(width,
+ in pixels, of the border to be drawn around the table.  a value of 
+FRAME will enclose just the outside of the table; BASIC, the border and 
+cells)<br>
+ cellpadding=
+ (spacing between the contents of the cell and the cell borders)<br>
+  cellspacing= 
+  (size of the lines dividing the data cells)
+  width= (width in pixels or a percentage of the window)</td>
+<td valign="middle" align="center">&lt;tr&gt;...&lt;/tr&gt;<p> &lt;caption&gt;...&lt;/caption&gt;</p></td><td>&lt;blockquote&gt;<br>...&lt;/blockquote&gt;
+ &lt;body&gt;...&lt;/body&gt; &lt;dd&gt; or &lt;li&gt;, 
+&lt;form&gt;...&lt;/form&gt;  &lt;td&gt;...&lt;/td&gt;</td>
+
+</tr>
+
+<tr>
+<td align="center"><font size="+1">
+&lt;caption&gt;...&lt;/caption&gt;</font></td>
+<td>allows you to label a table with a caption</td>
+<td>align=top, bottom</td>
+<td></td>
+<td>&lt;table&gt;...&lt;/table&gt;</td>
+</tr>
+
+<tr>
+<td align="center"><font size="+1">&lt;tr&gt;...&lt;/tr&gt;</font></td>
+<td>creates a table row</td>
+<td>align=leftrightcenter
+ valign=<br>
+ (top middle bottom baseline)</td>
+<td>&lt;th&gt;...&lt;/th&gt; or &lt;td&gt;...&lt;/td&gt;</td>
+<td>&lt;table&gt;...&lt;/table&gt;</td>
+</tr>
+<tr>
+<td align="center"><font size="+1">&lt;td&gt;. . .&lt;/td&gt;<br>
+&lt;th&gt;. . .&lt;/th&gt;</font></td>
+<td>creates a data cell or header cell in a table row</td>
+<td>rowspan=<br>(the number of rows spanned by the cell)
+colspan=
+(the number of columns spanned by the cell)<br> align= (left, right, center: horizontal alignment of the cell contents)<br> valign= (top, middle, bottom:  the vertical alignment of the cell contents)<br> nowrap (indicates not to wrap the cell contents)<br> width= (width in pixels or in a quoted percentage of the window)</td>
+<td>&lt;p&gt;&lt;isindex&gt; &lt;hr&gt;<br>&lt;a&gt;...&lt;/a&gt;<br> &lt;h#&gt;...&lt;/h#&gt;<br>  ol, ul, dir, menu, dl, <br>pre, <br>&lt;blockquote&gt;<br>...&lt;/blockquote&gt;<br> &lt;form&gt;...&lt;/form&gt;<br> <br> &lt;address&gt;...&lt;/address&gt; table</td>
+<td>&lt;tr&gt;...&lt;/tr&gt;</td>
+</tr>
+
+
+
+<tr><td colspan="5"><a name="hyper"></a><b>Hypertext</b><center><table border=""><tbody><tr><td><a href="#table">&lt;&lt;Previous</a></td><td><a href="#cmdtable">Top</a></td><td><a href="#image">Next&gt;&gt;</a></td></tr></tbody></table></center></td></tr>
+
+<tr><td align="center"><font size="+1">&lt;a&gt;...&lt;/a&gt;</font></td>
+<td>creates a link to another document or to another segment of the same document</td>
+<td>href="URL" or "file"  or "#name" of subfile in the document<p></p><hr width="50%">
+ name="name of subfile in this document"<p>
+  rel, rev, urn, title, methods</p></td>
+<td align="center">&lt;img&gt; <br>&lt;br&gt;<br>&lt;em&gt;...&lt;/em&gt;<br>&lt;strong&gt;...&lt;/strong&gt;<br> &lt;code&gt;...&lt;/code&gt;<br> &lt;samp&gt;...&lt;/samp&gt;<br> &lt;kbd&gt;...&lt;/kbd&gt;<br> &lt;var&gt;...&lt;/var&gt;<br>&lt;cite&gt;...&lt;/cite&gt;<br>&lt;tt&gt;...&lt;/tt&gt;<br> &lt;b&gt;...&lt;/b&gt;<br> &lt;i&gt;...&lt;/i&gt;</td>
+<td align="center">&lt;body&gt;...&lt;/body&gt; 
+&lt;address&gt;...&lt;/address&gt; b cite code &lt;dd&gt;, &lt;dt&gt; or
+ &lt;li&gt;  &lt;em&gt;...&lt;/em&gt;<br> &lt;h#&gt;...&lt;/h#&gt; &lt;i&gt;...&lt;/i&gt;<br> &lt;kbd&gt;...&lt;/kbd&gt;<br>  &lt;pre&gt;...&lt;/pre&gt;<br> &lt;samp&gt;...&lt;/samp&gt;<br> &lt;strong&gt;...&lt;/strong&gt;<br> &lt;tt&gt;...&lt;/tt&gt;<br> &lt;var&gt;...&lt;/var&gt;<br> &lt;th&gt;...&lt;/th&gt; or &lt;td&gt;...&lt;/td&gt;</td>
+</tr>
+
+
+
+
+<tr><td colspan="5"><a name="image"></a><b>Images</b><center><table border=""><tbody><tr><td><a href="#hyper">&lt;&lt;Previous</a></td><td><a href="#cmdtable">Top</a></td><td><a href="#form">Next&gt;&gt;</a></td></tr></tbody></table></center></td></tr>
+
+<tr><td align="center"><font size="+1">&lt;img&gt;</font></td>
+<td>loads an inline image</td>
+<td colspan="2">ismap=<br> src=<br> alt="text"<br> <a href="http://home.netscape.com/assist/net_sites/html_extensions.html">Netscape extensions:</a><br>align texttop/ absmiddle /baseline /bottom, <br>vspace <br>hspace<br> width<br> height<br> border<br> lowsrc="file to be loaded with the main document"</td>
+
+<td>&lt;a&gt;...&lt;/a&gt; <br>&lt;address&gt;...&lt;/address&gt;<br> &lt;b&gt;...&lt;/b&gt;<br> cite code &lt;dd&gt;, &lt;dt&gt;, or &lt;li&gt;  em<br> &lt;h#&gt;...&lt;/h#&gt; i kbd  p samp strong tt  var</td>
+</tr>
+
+
+<tr><td colspan="5"><a name="form"></a><b>Forms</b><center><table border=""><tbody><tr><td><a href="#image">&lt;&lt;Previous</a></td><td><a href="#cmdtable">Top</a></td><td><a href="#break">Next&gt;&gt;</a></td></tr></tbody></table></center></td></tr>
+
+<tr><td align="center"><font size="+1">&lt;form&gt;...&lt;/form&gt;</font></td>
+<td>creates a form</td>
+<td>action="URL" of script to process form input<br> method="get" or "post" how the input will<br> be sent to the gateway on the server side<br> enctype=<br>"application/ x-www-form-urlencoded" only one value possible right now<br></td>
+<td>&lt;h#&gt;...&lt;/h#&gt; p, lists, pre, &lt;blockquote&gt;<br>...&lt;/blockquote&gt;, isindex table hr address input select textarea</td>
+<td>&lt;blockquote&gt;<br>...&lt;/blockquote&gt; 
+&lt;body&gt;...&lt;/body&gt; &lt;dd&gt; or &lt;li&gt; 
+&lt;th&gt;...&lt;/th&gt; or &lt;td&gt;...&lt;/td&gt;</td>
+</tr>
+
+<tr>
+<td align="center"><font size="+1">&lt;input&gt;</font></td>
+<td>input widget for a form</td>
+<td colspan="2"><b>type</b>="(checkbox/ hidden/ radio /reset /submit /text /image)"<br>
+ <b>name</b>="name of this item as passed to the script (in name/value pair),"<br> <b>value</b>="default value (for text or hidden widget);<br> value to be submitted with the form (for a checkbox or radio button);<br>or label (for Reset or Submit buttons)"<br> <b>src</b>="source file for an image",\ <br><b>checked</b> indicates that checkbox or radio button is checked <br><b>size</b>="size in chars of text widget" <br><b>maxlength</b>="no of characters in a text field" <br> <b>align=</b>"(texttop/ absmiddle /baseline /bottom,)"</td>
+
+<td>&lt;form&gt;...&lt;/form&gt;</td>
+</tr>
+
+<tr>
+<td align="center"><font size="+1">&lt;textarea&gt;...<br>
+&lt;/textarea&gt;</font></td>
+<td>multiline text entry widget</td>
+<td colspan="2"> <b>name</b>=" (name to be passed to the script as part of name/value pair)" <br><b>rows</b>="no. of rows"<br><b>cols</b>="(no. of cols.)"</td>
+
+<td> &lt;form&gt;...&lt;/form&gt;</td>
+</tr>
+
+<tr>
+<td align="center"><font size="+1">&lt;select&gt;</font></td>
+<td>creates a menu or scrolling list of possible items</td>
+<td><b>name</b>=name of data field<br> size=#of items to display<br>multiple allows multiple selections</td>
+<td align="center">&lt;option&gt;</td>
+<td>&lt;form&gt;...&lt;/form&gt;</td>
+</tr>
+
+
+<tr>
+<td align="center"><font size="+1">&lt;option&gt;</font></td>
+<td>indicates a possible item within a select widget</td>
+<td colspan="2">selected=default selection<br> value="data submitted if this option is selected"</td>
+
+<td align="center"><font size="+1">&lt;select&gt;</font></td>
+</tr>
+
+<tr><td colspan="5"><a name="break"></a><b>Breaks, Headings, and Titles</b><center><table border=""><tbody><tr><td><a href="#form">&lt;&lt;Previous</a></td><td><a href="#cmdtable">Top</a></td></tr></tbody></table></center></td></tr>
+
+
+<tr>
+<td align="center"><font size="+1">&lt;title&gt;. . .&lt;/title&gt;</font></td>
+<td colspan="3">allows you to select a title<br> that will appear above your browser window <br>(default is the actual filename of your document)</td>
+
+
+<td>inside &lt;HEAD&gt;<br>...&lt;/HEAD&gt;</td>
+</tr>
+
+
+<tr><td align="center"><font size="+2">&lt;h1&gt;...&lt;/h1&gt;</font><br><font size="+1">&lt;h2&gt;...&lt;/h2&gt;</font><br>&lt;h3&gt;...&lt;/h3&gt;<br><font size="-1">&lt;h4&gt;...&lt;/h4&gt;</font><br><font size="-2">&lt;h5&gt;...&lt;/h5&gt;</font><br><font size="-3">&lt;h6&gt;...&lt;/h6&gt; </font></td>
+
+<td>marks six levels of headings<br> (1 is largest;<br> 6 smallest)</td>
+<td rowspan="2">align=center (3.0)</td>
+<td>&lt;a&gt;...&lt;/a&gt; img<br>
+ br
+  em 
+  strong
+   code
+    samp
+     kbd
+      var
+       cite
+        tt
+         &lt;b&gt;...&lt;/b&gt;
+          i</td>
+<td>&lt;blockquote&gt;<br>...&lt;/blockquote&gt;<br> &lt;body&gt;...&lt;/body&gt;<br> &lt;pre&gt;...&lt;/pre&gt; <br>&lt;address&gt;<br>...&lt;/address&gt;<br> &lt;form&gt;...&lt;/form&gt; <br>&lt;th&gt;...&lt;/th&gt; or &lt;td&gt;...&lt;/td&gt;</td>
+</tr>
+
+<tr>
+<td align="center"><font size="+1"> &lt;p&gt;</font></td>
+<td>creates a paragraph<p>
+break</p></td>
+<td>&lt;a&gt;...&lt;/a&gt;<br> &lt;img&gt; and &lt;br&gt;<br>
+ em 
+ strong
+  code
+   samp
+    kbd
+     var
+      cite
+       tt
+        &lt;b&gt;...&lt;/b&gt;
+         i</td>
+<td>&lt;blockquote&gt;<br>...&lt;/blockquote&gt; &lt;body&gt;...&lt;/body&gt; &lt;dd&gt; or &lt;li&gt; &lt;form&gt;...&lt;/form&gt; </td>
+</tr>
+
+<tr>
+<td align="center"><font size="+1">&lt;br&gt;</font></td>
+<td>forces<br> a <br>line<br> break</td>
+<td colspan="2">clear=right, left, all (3.0)</td>
+
+<td>&lt;a&gt;...&lt;/a&gt;<br> &lt;address&gt;<br>...&lt;/address&gt;<br> &lt;b&gt;...&lt;/b&gt;<br> cite<br> code<br> &lt;dd&gt;, &lt;dt&gt; or &lt;li&gt;<br>&lt;h#&gt;...&lt;/h#&gt;<br>em<br>  i<br> kbd<br>  &lt;p&gt;, &lt;pre&gt;...&lt;/pre&gt;<br> samp<br> strong<br> tt<br> var</td>
+</tr>
+
+<tr>
+<td align="center"><font size="+1">&lt;hr&gt; </font></td>
+<td>draws a horizontal rule line</td>
+<td colspan="2"><a href="http://home.netscape.com/assist/net_sites/html_extensions.html">Netscape extensions</a>:<br>
+size=(in pixels, the width of the line itself)<br>
+ <b>width</b>=(in pixels, or a "#%" of the screen, the width traversed by the line)<br>
+  <b>align=</b>(horizontal placement of the line, if it doesn't cross the entire screen)<br>
+   <b>noshade</b> eliminates the line's shadow</td>
+
+<td>&lt;blockquote&gt;<br>...&lt;/blockquote&gt; 
+&lt;body&gt;...&lt;/body&gt;, &lt;form&gt;...&lt;/form&gt;, 
+&lt;pre&gt;...&lt;/pre&gt;, &lt;td&gt;...&lt;/td&gt;</td>
+</tr>
+
+</tbody></table><p>
+
+</p><hr>
+<p>
+</p><center>
+<table cellpadding="8" border="5"><tbody><tr><td valign="middle" align="center"><font size="+1"><a href="#cmdtable">Top</a></font></td><td valign="middle" align="center"><font size="+1"><a href="http://www.transaction.net/web/tutor/text/index.html">Maximizing<br> Meaning</a><br> in Your Text</font></td>
+
+<td valign="middle" align="center">return to<br><font size="+1"><a href="http://www.transaction.net/index.html"><img src="HTML%20Commands_files/ziskbill.gif" width="70" height="30" border="0"><br>TRANSACTION.NET</a></font></td><td valign="middle" align="center"><font size="+1"><a href="http://www.transaction.net/web/tutor/index.html">Home</a></font></td></tr></tbody></table>
+</center>
+<p>
+
+</p><p></p><center>
+<img src="HTML%20Commands_files/spiders.gif" lowsrc="gifs/spiders.gif" width="75" height="75"><p></p></center>
+
+<center><font size="-1">
+<a href="http://www.transaction.net/index.html">http://www.transaction.net</a>/web/tutor/cmdtable.html<br>
+<a href="mailto:zisk@well.com">zisk@well.com</a>
+</font></center><p>
+
+
+
+
+
+</p></center></center><iframe id="google_osd_static_frame_5805758502838" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body><iframe id="google_esf" name="google_esf" src="HTML%20Commands_files/zrt_lookup.html" style="display: none;" data-ad-client="ca-pub-2138107218576657"></iframe></html>
